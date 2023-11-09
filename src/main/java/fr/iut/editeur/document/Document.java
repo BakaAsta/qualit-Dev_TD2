@@ -31,6 +31,12 @@ public class Document {
         String toUpper = texte.substring(start, end).toUpperCase();
         texte = leftPart + toUpper + rightPart;
     }
+
+    public void effacer(int start, int end) {
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(end);
+        texte = leftPart + rightPart;
+    }
     @Override
     public String toString() {
         return this.texte;
