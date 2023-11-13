@@ -30,7 +30,6 @@ public class Document {
         String rightPart = texte.substring(end);
         String toUpper = texte.substring(start, end).toUpperCase();
         texte = leftPart + toUpper + rightPart;
-        texte = "petite erreur de merde";
     }
 
     public void effacer(int start, int end) {
