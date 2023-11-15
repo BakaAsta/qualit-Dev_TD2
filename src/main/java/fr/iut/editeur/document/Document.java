@@ -1,5 +1,7 @@
 package fr.iut.editeur.document;
 
+import java.util.Objects;
+
 public class Document {
 
     private String texte;
@@ -20,6 +22,18 @@ public class Document {
         this.texte += texte;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Document document = (Document) o;
+        return Objects.deepEquals(texte, document.texte);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(texte);
+    }
 
     /**
      * Description de la méthode

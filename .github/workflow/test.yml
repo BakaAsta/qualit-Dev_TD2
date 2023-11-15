@@ -1,0 +1,14 @@
+#Se déclenche seulement quand on push sur la branche "development"
+name : nom_custom_workflow
+
+on:
+  push:
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run Test script
+        run: src/test/java/fr.iut.editeur.document/test.java
