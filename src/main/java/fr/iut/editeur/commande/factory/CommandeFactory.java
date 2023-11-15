@@ -16,6 +16,7 @@ public class CommandeFactory {
 
     private CommandeFactory() {}
 
+
     public Commande createCommand(String name, Document document, String[] parameters) {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);

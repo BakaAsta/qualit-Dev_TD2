@@ -4,7 +4,12 @@ import fr.iut.editeur.document.Document;
 
 public class CommandeAjouter extends CommandeDocument {
 
-
+    /**
+     * Description de la méthode
+     * @param document sert a décrire le document
+     * @param parameters permet de décrire les paramètres
+     * @return Description de la valeur retournée
+     */
     public CommandeAjouter(Document document, String[] parameters) {
         super(document, parameters);
     }

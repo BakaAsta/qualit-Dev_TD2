@@ -20,6 +20,14 @@ public class Document {
         this.texte += texte;
     }
 
+
+    /**
+     * Description de la méthode
+     * @param start donne la position du premier caractère à remplacer
+     * @param end donne la position du dernier caractère à remplacer
+     * @param remplacement donne la chaîne de caractères qui va remplacer la sélection
+     * @return Description de la valeur retournée
+     */
     public void remplacer(int start, int end, String remplacement) {
         String leftPart = texte.substring(0, start);
         String rightPart = texte.substring(end);
