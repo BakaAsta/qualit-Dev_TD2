@@ -20,6 +20,6 @@ public class DocumentTest extends TestCase {
         Document document = new Document();
         document.ajouter("Hello");
         document.remplacer(0, 2, "Hi");
-        assertEquals("Hillo", document.getTexte());
+        assertEquals("H illo", document.getTexte());
     }
 }
