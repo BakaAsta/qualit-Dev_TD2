@@ -22,10 +22,7 @@ jobs:
         run: npm install  # Remplacez cette commande par la commande d'installation de vos dépendances
 
       - name: Build Documentation
-        run: npm run javadoc::javadoc  # Remplacez cette commande par la commande de génération de la documentation
+        run: run javadoc::javadoc  # Remplacez cette commande par la commande de génération de la documentation
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./td-1/docs  # Remplacez cela par le chemin réel de votre documentation
+        uses: actions-gh-pages@v3
